@@ -1,10 +1,10 @@
-# Licensed under the GNU AGPL 3.0
+# Licensed under the GNU Affero General Public License
 # Source code available at https://github.com/comma-tose/PY-DOS/
 # Version alpha-0.1
 
 import platform
 
-pydosversion = "alpha-0.1" # Easy way to change the output for the "version" command.
+pydosversion = "alpha-0.1.1" # Easy way to change the output for the "version" command.
 
 def pydos_debug(): # This took way too long to make
 
@@ -36,7 +36,7 @@ while True: # Loop
         print("All commands are case-sensitive and lowercase.\nhelp: Show this screen again\ninfo: Show information.\ndebug: Show debug info\nexit: Quit PY-DOS") # This is gonna be so fucking fun to maintain as I add new commands
     else:
         if user_command == "info": # Command: info
-            print("PY-DOS by Commatose, licensed under the AGPL 3.0. Version", pydosversion)
+            print("PY-DOS by Commatose, licensed under the AGPL. Version", pydosversion)
         else:
             if user_command == "debug": # Command: debug
                     pydos_debug()
@@ -45,5 +45,6 @@ while True: # Loop
                     exit()
                 else:
                     print("Bad command, try typing\"help\"") # Give error if command doesn't exist
+
 
 
