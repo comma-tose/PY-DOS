@@ -6,9 +6,9 @@ This is a project I'll be continuing to develop and add on to from September 5, 
 This project is a DOS-like Python script that aims to replicate the behavior of DOS systems from the 1980s and 1990s.
 
 Current commands (Case-sensitive):
-help: Show the help screen
-info: Show information about PY-DOS
-debug: Show debug info
-exit: Quit PY-DOS
+`help`: Show the help screen
+`info`: Show information about PY-DOS
+`debug`: Show debug info
+`exit`: Quit PY-DOS
 
 *This project is in alpha. Expect stuff to break, and feel free to report any bugs you find.*
