@@ -1,5 +1,5 @@
 # Licensed under the GNU AGPL 3.0
-# Source code available at https://github.com/commma-tose/PY-DOS/
+# Source code available at https://github.com/comma-tose/PY-DOS/
 # Version alpha-0.1
 
 import platform
@@ -45,4 +45,5 @@ while True: # Loop
                     exit()
                 else:
                     print("Bad command, try typing\"help\"") # Give error if command doesn't exist
+
 
