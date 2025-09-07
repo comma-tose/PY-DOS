@@ -4,7 +4,7 @@
 
 import platform
 
-pydosversion = "alpha-0.1.1" # Easy way to change the output for the "version" command.
+pydosversion = "alpha-0.1.2" # Easy way to change the output for the "version" command.
 
 def pydos_debug(): # This took way too long to make
 
@@ -33,7 +33,7 @@ while True: # Loop
     # The following if command is a mess, you have been warned.
 
     if user_command == "help": # Command: help
-        print("All commands are case-sensitive and lowercase.\nhelp: Show this screen again\ninfo: Show information.\ndebug: Show debug info\nexit: Quit PY-DOS") # This is gonna be so fucking fun to maintain as I add new commands
+        print("All commands are case-sensitive and lowercase.\nhelp: Show this screen again\ninfo: Show information.\ndebug: Show debug info\nexit: Quit PY-DOS\ndir: Show directory") # This is gonna be so fucking fun to maintain as I add new commands
     else:
         if user_command == "info": # Command: info
             print("PY-DOS by Commatose, licensed under the AGPL. Version", pydosversion)
@@ -41,10 +41,14 @@ while True: # Loop
             if user_command == "debug": # Command: debug
                     pydos_debug()
             else:
-                if user_command == "exit": # Command: exit
-                    exit()
+                if user_command == "dir": # Command: dir
+                    print("debug\ndir\nexit\nhelp\ninfo")\
                 else:
-                    print("Bad command, try typing\"help\"") # Give error if command doesn't exist
+                    if user_command == "exit": # Command: exit
+                        exit()
+                    else:
+                        print("Bad command, try typing\"help\"") # Give error if command doesn't exist
+
 
 
 
