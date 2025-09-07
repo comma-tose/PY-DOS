@@ -42,12 +42,13 @@ while True: # Loop
                     pydos_debug()
             else:
                 if user_command == "dir": # Command: dir
-                    print("debug\ndir\nexit\nhelp\ninfo")\
+                    print("debug\ndir\nexit\nhelp\ninfo")
                 else:
                     if user_command == "exit": # Command: exit
                         exit()
                     else:
                         print("Bad command, try typing\"help\"") # Give error if command doesn't exist
+
 
 
 
